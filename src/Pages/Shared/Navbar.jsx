@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
+
+import { AuthContext } from "../../Provider/AuthProvidr";
 import { Toaster, toast } from "sonner";
 
 const Navbar = () => {
@@ -12,10 +13,16 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/addproduct">Add Product</NavLink>
+        <NavLink to="/rooms">Rooms</NavLink>
       </li>
       <li>
-        <NavLink to="/mycart">My Cart</NavLink>
+        <NavLink to="/mybookings">My Bookings</NavLink>
+      </li>
+      <li>
+        <NavLink to="/aboutUs">About Us</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contacts">Contact Us</NavLink>
       </li>
     </>
   );

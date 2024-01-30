@@ -1,18 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
-
+import ErrorPage from "../Pages/Error/ErrorPage";
+import Home from "../Pages/Home/Home";
+import Rooms from "../Pages/Rooms/Rooms";
+import PrivetRoutes from "./PrivetRoutes";
+import Bookings from "../Pages/MyBookings/Bookings";
+import RoomDetails from "../Pages/Rooms/RoomDetails";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import ErrorPage from "../Pages/Error/ErrorPage";
-import AddProduct from "../Pages/AddProduct/AddProduct";
-import MyCart from "../Pages/MyCart/MyCart";
-import Home from "../Pages/Home/Home";
-import PrivetRoutes from "./PrivetRoutes";
-
-import Brand from "../Pages/Home/Brand";
-import ProductByBrand from "../Pages/Brands/ProductByBrand";
-import ProductDetails from "../Pages/Brands/ProductDetails";
-import UpdateProduct from "../Pages/Brands/UpdateProduct";
+import AboutUs from "../Pages/AboutUs/About";
+import Contact from "../Pages/ContactUs/Contact";
 
 const router = createBrowserRouter([
   {
@@ -25,59 +22,35 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/addproduct",
+        path: "/rooms",
+        element: <Rooms></Rooms>,
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/contacts",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/mybookings",
         element: (
           <PrivetRoutes>
-            <AddProduct></AddProduct>
+            <Bookings></Bookings>
           </PrivetRoutes>
         ),
       },
+
       {
-        path: "/mycart",
+        path: "/roomDetails/:id",
         element: (
           <PrivetRoutes>
-            <MyCart></MyCart>
+            <RoomDetails></RoomDetails>
           </PrivetRoutes>
         ),
-        loader: () =>
-          fetch("https://brand-shop-server-bthj.onrender.com/mycart"),
       },
-      {
-        path: "/brand",
-        element: <Brand></Brand>,
-      },
-      {
-        path: "/brand/:brandName",
-        element: (
-          <PrivetRoutes>
-            <ProductByBrand></ProductByBrand>
-          </PrivetRoutes>
-        ),
-        loader: () =>
-          fetch("https://brand-shop-server-bthj.onrender.com/products"),
-      },
-      {
-        path: "/productDetails/:id",
-        element: (
-          <PrivetRoutes>
-            <ProductDetails></ProductDetails>
-          </PrivetRoutes>
-        ),
-        loader: () =>
-          fetch("https://brand-shop-server-bthj.onrender.com/products"),
-      },
-      {
-        path: "/updateProduct/:id",
-        element: (
-          <PrivetRoutes>
-            <UpdateProduct></UpdateProduct>
-          </PrivetRoutes>
-        ),
-        loader: ({ params }) =>
-          fetch(
-            `https://brand-shop-server-bthj.onrender.com/products/${params.id}`
-          ),
-      },
+
       {
         path: "/login",
         element: <Login></Login>,

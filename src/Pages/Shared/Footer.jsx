@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="font-bold text-3xl">
             <span className="text-lg font-semibold">
               {" "}
-              Providing best fashion and apparel since 2000
+              Providing best service in hotels since 2000
             </span>
           </p>
           <p>

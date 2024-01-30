@@ -1,7 +1,7 @@
 import Navbar from "../Shared/Navbar";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
-const Contents = () => {
+const AboutUs = () => {
   return (
     <div>
       <Navbar></Navbar>
@@ -152,4 +152,4 @@ const Contents = () => {
   );
 };
 
-export default Contents;
+export default AboutUs;

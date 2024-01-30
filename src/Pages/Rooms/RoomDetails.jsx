@@ -2,7 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import Swal from "sweetalert2";
 
-const ProductDetails = () => {
+const RoomDetails = () => {
   const products = useLoaderData();
   const { id } = useParams();
   console.log(id);
@@ -76,4 +76,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default RoomDetails;
