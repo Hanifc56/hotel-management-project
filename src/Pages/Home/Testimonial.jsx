@@ -1,4 +1,4 @@
-const UserFeedback = () => {
+const Testimonial = () => {
   return (
     <div>
       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -13,9 +13,10 @@ const UserFeedback = () => {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
-                “Exceptional experience at Flairtex! Trendy styles, friendly
-                staff, seamless shopping, and impeccable attention to detail. A
-                must-visit for fashion enthusiasts. Can not wait to return!”
+                “Exceptional stay at this Hotel! Impeccable service, luxurious
+                rooms, and stunning views. The staff attention to detail and
+                hospitality made our experience unforgettable. Highly recommend
+                for a memorable getaway.”
               </p>
             </blockquote>
             <figcaption className="mt-10">
@@ -45,4 +46,4 @@ const UserFeedback = () => {
   );
 };
 
-export default UserFeedback;
+export default Testimonial;
