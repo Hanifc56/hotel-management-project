@@ -43,10 +43,10 @@ const AboutUs = () => {
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
                 <p className="text-base font-semibold leading-7 text-indigo-600">
-                  Faster Planning
+                  Best Hotel Rooms For Planning Your Trip
                 </p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Unleashing the Extraordinary: Our Exclusive Annual Event
+                  Unleashing the Extraordinary: Our Exclusive Rooms
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   Join us for an unforgettable experience at our annual event,
