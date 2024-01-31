@@ -21,7 +21,7 @@ const Room = ({ room }) => {
                 reviews: {reviews.length}
               </p>
 
-              <Link to={`/rooms/${_id}`}>
+              <Link to={`/roomDetails/${_id}`}>
                 <button className="btn btn-outline btn-secondary">
                   Details
                 </button>

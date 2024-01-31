@@ -16,16 +16,13 @@ const ErrorPage = () => {
             <Link className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
               Go back home
             </Link>
-            <button className="text-sm font-semibold text-gray-900">
-              Contact support <span aria-hidden="true">&rarr;</span>
-            </button>
           </div>
         </div>
         <div className=" lg:col-span-2 ">
           <img
-            src="https://i.ibb.co/5k53M2x/desert-1270345-1280.jpg"
+            src="https://i.ibb.co/qgR9Bwf/Asset-2-4x-100.jpg"
             alt=""
-            className="rounded-lg"
+            className="rounded-full"
           />
         </div>
       </main>

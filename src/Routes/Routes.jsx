@@ -49,6 +49,8 @@ const router = createBrowserRouter([
             <RoomDetails></RoomDetails>
           </PrivetRoutes>
         ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/rooms/${params.id}`),
       },
 
       {
