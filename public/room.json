@@ -1,0 +1,265 @@
+[
+  {
+    "roomType": "Standard Room",
+    "price": 100,
+    "features": ["Queen bed", "Private bathroom", "TV", "Wi-Fi"],
+    "roomSize": "250 sq. ft.",
+    "details": "A comfortable room with a queen-sized bed, perfect for solo travelers or couples.",
+    "specialOffers": ["15% off for early booking", "Free breakfast"],
+    "reviews": [
+      {
+        "username": "Traveler123",
+        "rating": 4.5,
+        "comment": "Great value for the price."
+      },
+      {
+        "username": "AdventureSeeker",
+        "rating": 3.8,
+        "comment": "Decent room, friendly staff."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/Z6G4gtz/pexels-pixabay-164595.jpg"
+  },
+  {
+    "roomType": "Deluxe Suite",
+    "price": 200,
+    "features": [
+      "King bed",
+      "Private balcony",
+      "Jacuzzi",
+      "Mini-bar",
+      "Smart TV"
+    ],
+    "roomSize": "400 sq. ft.",
+    "details": "Luxurious suite with a king-sized bed, private balcony, and a relaxing jacuzzi.",
+    "specialOffers": [
+      "20% off for a 3-night stay",
+      "Complimentary spa treatment"
+    ],
+    "reviews": [
+      {
+        "username": "LuxuryTraveler",
+        "rating": 4.8,
+        "comment": "Absolutely stunning!"
+      },
+      {
+        "username": "BusinessNomad",
+        "rating": 4.2,
+        "comment": "Great amenities for work and relaxation."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/L8sFKDD/pexels-max-rahubovskiy-7031731.jpg"
+  },
+  {
+    "roomType": "Family Room",
+    "price": 150,
+    "features": ["Two double beds", "Kitchenette", "Family-friendly amenities"],
+    "roomSize": "350 sq. ft.",
+    "details": "Spacious family room with two double beds and a convenient kitchenette.",
+    "specialOffers": ["Kids stay free", "Complimentary family movie night"],
+    "reviews": [
+      {
+        "username": "FamilyExplorer",
+        "rating": 4.5,
+        "comment": "Perfect for a family getaway."
+      },
+      {
+        "username": "TravelingTribe",
+        "rating": 4.0,
+        "comment": "Family-friendly and comfortable."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/RgfRMfF/pexels-pixabay-271624.jpg"
+  },
+  {
+    "roomType": "Business Suite",
+    "price": 180,
+    "features": [
+      "Workspace",
+      "King bed",
+      "Meeting room access",
+      "High-speed internet"
+    ],
+    "roomSize": "300 sq. ft.",
+    "details": "Ideal suite for business travelers with a dedicated workspace and meeting room access.",
+    "specialOffers": [
+      "Free airport shuttle",
+      "Late check-out for business guests"
+    ],
+    "reviews": [
+      {
+        "username": "CorporateNomad",
+        "rating": 4.4,
+        "comment": "Perfect for business trips."
+      },
+      {
+        "username": "MeetingPro",
+        "rating": 4.6,
+        "comment": "Great amenities for work, comfortable stay."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/H7L3292/pexels-julie-aagaard-2467285.jpg"
+  },
+  {
+    "roomType": "Ocean View Room",
+    "price": 250,
+    "features": ["King bed", "Private balcony with ocean view", "Spa bath"],
+    "roomSize": "350 sq. ft.",
+    "details": "Enjoy stunning ocean views from your private balcony in this elegant room.",
+    "specialOffers": [
+      "Free spa treatment",
+      "Complimentary breakfast with ocean view"
+    ],
+    "reviews": [
+      {
+        "username": "BeachLover",
+        "rating": 4.7,
+        "comment": "Unbeatable ocean view and fantastic amenities."
+      },
+      {
+        "username": "SunsetWatcher",
+        "rating": 4.9,
+        "comment": "A perfect romantic getaway."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/WxMV3fC/pexels-roberto-nickson-2417842.jpg"
+  },
+  {
+    "roomType": "Presidential Suite",
+    "price": 500,
+    "features": ["King bed", "Private terrace", "Home theater", "Jacuzzi"],
+    "roomSize": "800 sq. ft.",
+    "details": "Experience unparalleled luxury in our Presidential Suite with a private terrace and home theater.",
+    "specialOffers": [
+      "24-hour personal butler",
+      "Complimentary limousine service"
+    ],
+    "reviews": [
+      {
+        "username": "LuxurySeeker",
+        "rating": 5.0,
+        "comment": "Exceeded all expectations. Truly presidential."
+      },
+      {
+        "username": "VIPGuest",
+        "rating": 4.8,
+        "comment": "Luxury at its finest."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/K6sqYzG/pexels-iv-n-rivero-1001965.jpg"
+  },
+  {
+    "roomType": "Economy Room",
+    "price": 80,
+    "features": ["Double bed", "Shared bathroom", "Basic amenities"],
+    "roomSize": "200 sq. ft.",
+    "details": "A budget-friendly option with essential amenities for the cost-conscious traveler.",
+    "specialOffers": ["10% off for extended stays", "Free Wi-Fi"],
+    "reviews": [
+      {
+        "username": "BudgetExplorer",
+        "rating": 3.5,
+        "comment": "Decent for the price, good for short stays."
+      },
+      {
+        "username": "ThriftyTraveler",
+        "rating": 3.0,
+        "comment": "Basic, but served its purpose."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/kGg1kBM/pexels-naim-benjelloun-2029722.jpg"
+  },
+  {
+    "roomType": "Romantic Hideaway",
+    "price": 300,
+    "features": [
+      "Four-poster bed",
+      "Private garden",
+      "Candlelit dinner service"
+    ],
+    "roomSize": "400 sq. ft.",
+    "details": "Escape to a romantic hideaway with a four-poster bed, private garden, and intimate dining service.",
+    "specialOffers": ["Couples spa package", "Champagne on arrival"],
+    "reviews": [
+      {
+        "username": "Lovebirds",
+        "rating": 4.9,
+        "comment": "Perfect for a romantic weekend."
+      },
+      {
+        "username": "PassionateTraveler",
+        "rating": 4.7,
+        "comment": "Exquisite and enchanting."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/RpQFqvM/pexels-elina-sazonova-1838554.jpg"
+  },
+  {
+    "roomType": "Mountain View Cabin",
+    "price": 180,
+    "features": [
+      "Cozy cabin",
+      "Mountain view",
+      "Fireplace",
+      "Nature trail access"
+    ],
+    "roomSize": "300 sq. ft.",
+    "details": "Embrace the serenity of nature in a cozy cabin with a breathtaking mountain view.",
+    "specialOffers": ["Guided nature walk", "Complimentary s'mores kit"],
+    "reviews": [
+      {
+        "username": "NatureLover",
+        "rating": 4.6,
+        "comment": "A peaceful retreat amidst nature."
+      },
+      {
+        "username": "HikingEnthusiast",
+        "rating": 4.3,
+        "comment": "Perfect for nature lovers and hikers."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/WxfWKvw/pexels-freemockupsorg-775219.jpg"
+  },
+  {
+    "roomType": "Pet-Friendly Suite",
+    "price": 120,
+    "features": ["Pet bed", "Pet-friendly amenities", "Private courtyard"],
+    "roomSize": "250 sq. ft.",
+    "details": "Bring your furry friend along to our pet-friendly suite with a private courtyard.",
+    "specialOffers": ["Pet grooming service", "Complimentary pet treats"],
+    "reviews": [
+      {
+        "username": "PetParent",
+        "rating": 4.2,
+        "comment": "Great for traveling with pets."
+      },
+      {
+        "username": "AnimalLover",
+        "rating": 4.5,
+        "comment": "Pet-friendly and comfortable."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/K7NVYsY/pexels-rdne-stock-project-8489712.jpg"
+  },
+  {
+    "roomType": "Skyline View Room",
+    "price": 180,
+    "features": ["King bed", "Floor-to-ceiling windows", "City skyline view"],
+    "roomSize": "350 sq. ft.",
+    "details": "Enjoy breathtaking city views from the comfort of your room with floor-to-ceiling windows.",
+    "specialOffers": ["Free city tour", "Complimentary rooftop access"],
+    "reviews": [
+      {
+        "username": "CityExplorer",
+        "rating": 4.7,
+        "comment": "Spectacular views of the city skyline."
+      },
+      {
+        "username": "UrbanNomad",
+        "rating": 4.5,
+        "comment": "Perfect for city enthusiasts."
+      }
+    ],
+    "roomImg": "https://i.ibb.co/VmS8PPT/pexels-max-rahubovskiy-6890414.jpg"
+  }
+]
