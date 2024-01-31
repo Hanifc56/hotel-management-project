@@ -1,20 +1,29 @@
+import { Link } from "react-router-dom";
+
 const Promotion = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero my-12 rounded-xl">
         <div className="hero-content flex-col lg:flex-row">
           <img
-            src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+            src="https://i.ibb.co/W6GjwV8/m010t0655-d-sale-banner-03mar23.jpg"
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <h1 className="text-4xl font-semibold">
+              Unforgettable Stay, Irresistible Offers!
+            </h1>
+            <p className="py-6 font-medium text-lg">
+              Dive into delight with our hotel offers! Experience luxury with
+              panoramic views, cozy cabins, or pet-friendly suites. Enjoy
+              freebies like spa treatments, nature walks, and more. Your escape
+              awaits—book now for a blissful stay! 🌟 #TravelJoy #HotelDeals
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <Link to="/rooms">
+              <button className="btn btn-outline btn-secondary">
+                Book Now!
+              </button>
+            </Link>
           </div>
         </div>
       </div>
