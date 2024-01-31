@@ -4,7 +4,8 @@
     "price": 100,
     "features": ["Queen bed", "Private bathroom", "TV", "Wi-Fi"],
     "roomSize": "250 sq. ft.",
-    "details": "A comfortable room with a queen-sized bed, perfect for solo travelers or couples.",
+    "description": "A comfortable room with a queen-sized bed, perfect for solo travelers or couples.",
+    "details": "The Standard Room offers a cozy retreat with a comfortable queen-sized bed, private bathroom, TV, and Wi-Fi. Ideal for solo adventurers or couples seeking affordable luxury. Rated 4/5.",
     "specialOffers": ["15% off for early booking", "Free breakfast"],
     "reviews": [
       {
@@ -18,6 +19,7 @@
         "comment": "Decent room, friendly staff."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/Z6G4gtz/pexels-pixabay-164595.jpg"
   },
   {
@@ -31,7 +33,8 @@
       "Smart TV"
     ],
     "roomSize": "400 sq. ft.",
-    "details": "Luxurious suite with a king-sized bed, private balcony, and a relaxing jacuzzi.",
+    "description": "Luxurious suite with a king-sized bed, private balcony, and a relaxing jacuzzi.",
+    "details": "Indulge in opulence in the Deluxe Suite, featuring a king-sized bed, private balcony, jacuzzi, mini-bar, and Smart TV. An exquisite retreat for discerning guests. Rated 4/5.",
     "specialOffers": [
       "20% off for a 3-night stay",
       "Complimentary spa treatment"
@@ -48,6 +51,7 @@
         "comment": "Great amenities for work and relaxation."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/L8sFKDD/pexels-max-rahubovskiy-7031731.jpg"
   },
   {
@@ -55,7 +59,8 @@
     "price": 150,
     "features": ["Two double beds", "Kitchenette", "Family-friendly amenities"],
     "roomSize": "350 sq. ft.",
-    "details": "Spacious family room with two double beds and a convenient kitchenette.",
+    "description": "Spacious family room with two double beds and a convenient kitchenette.",
+    "details": "The Family Room provides ample space with two double beds, a kitchenette, and family-friendly amenities. Perfect for a memorable family getaway. Rated 4/5.",
     "specialOffers": ["Kids stay free", "Complimentary family movie night"],
     "reviews": [
       {
@@ -69,6 +74,7 @@
         "comment": "Family-friendly and comfortable."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/RgfRMfF/pexels-pixabay-271624.jpg"
   },
   {
@@ -81,7 +87,8 @@
       "High-speed internet"
     ],
     "roomSize": "300 sq. ft.",
-    "details": "Ideal suite for business travelers with a dedicated workspace and meeting room access.",
+    "description": "Ideal suite for business travelers with a dedicated workspace and meeting room access.",
+    "details": "The Business Suite is designed for productivity with a dedicated workspace, king-sized bed, meeting room access, and high-speed internet. Perfect for business trips. Rated 4/5.",
     "specialOffers": [
       "Free airport shuttle",
       "Late check-out for business guests"
@@ -98,6 +105,7 @@
         "comment": "Great amenities for work, comfortable stay."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/H7L3292/pexels-julie-aagaard-2467285.jpg"
   },
   {
@@ -105,7 +113,8 @@
     "price": 250,
     "features": ["King bed", "Private balcony with ocean view", "Spa bath"],
     "roomSize": "350 sq. ft.",
-    "details": "Enjoy stunning ocean views from your private balcony in this elegant room.",
+    "description": "Enjoy stunning ocean views from your private balcony in this elegant room.",
+    "details": "The Ocean View Room offers a touch of luxury with a king-sized bed, private balcony overlooking the ocean, and a spa bath. An exquisite retreat for romance. Rated 4/5.",
     "specialOffers": [
       "Free spa treatment",
       "Complimentary breakfast with ocean view"
@@ -122,6 +131,7 @@
         "comment": "A perfect romantic getaway."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/WxMV3fC/pexels-roberto-nickson-2417842.jpg"
   },
   {
@@ -129,7 +139,8 @@
     "price": 500,
     "features": ["King bed", "Private terrace", "Home theater", "Jacuzzi"],
     "roomSize": "800 sq. ft.",
-    "details": "Experience unparalleled luxury in our Presidential Suite with a private terrace and home theater.",
+    "description": "Experience unparalleled luxury in our Presidential Suite with a private terrace and home theater.",
+    "details": "The Presidential Suite epitomizes luxury with a king-sized bed, private terrace, home theater, and jacuzzi. A regal experience for the most discerning guests. Rated 4/5.",
     "specialOffers": [
       "24-hour personal butler",
       "Complimentary limousine service"
@@ -146,6 +157,7 @@
         "comment": "Luxury at its finest."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/K6sqYzG/pexels-iv-n-rivero-1001965.jpg"
   },
   {
@@ -153,7 +165,8 @@
     "price": 80,
     "features": ["Double bed", "Shared bathroom", "Basic amenities"],
     "roomSize": "200 sq. ft.",
-    "details": "A budget-friendly option with essential amenities for the cost-conscious traveler.",
+    "description": "A budget-friendly option with essential amenities for the cost-conscious traveler.",
+    "details": "The Economy Room provides budget-friendly accommodation with a double bed, shared bathroom, and basic amenities. Ideal for short stays. Rated 4/5.",
     "specialOffers": ["10% off for extended stays", "Free Wi-Fi"],
     "reviews": [
       {
@@ -167,6 +180,7 @@
         "comment": "Basic, but served its purpose."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/kGg1kBM/pexels-naim-benjelloun-2029722.jpg"
   },
   {
@@ -178,7 +192,8 @@
       "Candlelit dinner service"
     ],
     "roomSize": "400 sq. ft.",
-    "details": "Escape to a romantic hideaway with a four-poster bed, private garden, and intimate dining service.",
+    "description": "Escape to a romantic hideaway with a four-poster bed, private garden, and intimate dining service.",
+    "details": "The Romantic Hideaway is a haven for romance, featuring a four-poster bed, private garden, and candlelit dinner service. An enchanting retreat for couples. Rated 4/5.",
     "specialOffers": ["Couples spa package", "Champagne on arrival"],
     "reviews": [
       {
@@ -192,6 +207,7 @@
         "comment": "Exquisite and enchanting."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/RpQFqvM/pexels-elina-sazonova-1838554.jpg"
   },
   {
@@ -204,7 +220,8 @@
       "Nature trail access"
     ],
     "roomSize": "300 sq. ft.",
-    "details": "Embrace the serenity of nature in a cozy cabin with a breathtaking mountain view.",
+    "description": "Embrace the serenity of nature in a cozy cabin with a breathtaking mountain view.",
+    "details": "The Mountain View Cabin offers a cozy retreat with a cabin ambiance, mountain views, fireplace, and nature trail access. Perfect for nature enthusiasts. Rated 4/5.",
     "specialOffers": ["Guided nature walk", "Complimentary s'mores kit"],
     "reviews": [
       {
@@ -218,6 +235,7 @@
         "comment": "Perfect for nature lovers and hikers."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/WxfWKvw/pexels-freemockupsorg-775219.jpg"
   },
   {
@@ -225,7 +243,8 @@
     "price": 120,
     "features": ["Pet bed", "Pet-friendly amenities", "Private courtyard"],
     "roomSize": "250 sq. ft.",
-    "details": "Bring your furry friend along to our pet-friendly suite with a private courtyard.",
+    "description": "Bring your furry friend along to our pet-friendly suite with a private courtyard.",
+    "details": "The Pet-Friendly Suite is tailored for pet lovers, featuring a pet bed, pet-friendly amenities, and a private courtyard. An ideal retreat for travelers with pets. Rated 4/5.",
     "specialOffers": ["Pet grooming service", "Complimentary pet treats"],
     "reviews": [
       {
@@ -239,6 +258,7 @@
         "comment": "Pet-friendly and comfortable."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/K7NVYsY/pexels-rdne-stock-project-8489712.jpg"
   },
   {
@@ -246,7 +266,8 @@
     "price": 180,
     "features": ["King bed", "Floor-to-ceiling windows", "City skyline view"],
     "roomSize": "350 sq. ft.",
-    "details": "Enjoy breathtaking city views from the comfort of your room with floor-to-ceiling windows.",
+    "description": "Enjoy breathtaking city views from the comfort of your room with floor-to-ceiling windows.",
+    "details": "The Skyline View Room offers unparalleled city views with a king-sized bed and floor-to-ceiling windows. A perfect choice for city enthusiasts. Rated 4/5.",
     "specialOffers": ["Free city tour", "Complimentary rooftop access"],
     "reviews": [
       {
@@ -260,6 +281,7 @@
         "comment": "Perfect for city enthusiasts."
       }
     ],
+    "availability": "Available",
     "roomImg": "https://i.ibb.co/VmS8PPT/pexels-max-rahubovskiy-6890414.jpg"
   }
 ]
