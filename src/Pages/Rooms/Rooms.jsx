@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "../Shared/Navbar";
 import Room from "./Room";
+import { FaSearch } from "react-icons/fa";
 
 const Rooms = () => {
   const [rooms, setRooms] = useState([]);
@@ -12,14 +13,15 @@ const Rooms = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1>All rooms</h1>
-      <div className="flex justify-end">
+      <div className="flex justify-end relative">
         <input
           type="text"
           placeholder="Search Room by Price range"
           className="input input-bordered input-primary w-full max-w-xs rounded-full"
         />
-        <button>Search</button>
+        <button className="btn btn-ghost rounded-full absolute right-2">
+          <FaSearch></FaSearch>
+        </button>
       </div>
       <h1>Avilable Room: {rooms.length}</h1>
       <div className="grid grid-cols-1  gap-6">

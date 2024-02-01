@@ -3,27 +3,43 @@ import { Link, NavLink } from "react-router-dom";
 
 import { AuthContext } from "../../Provider/AuthProvidr";
 import { Toaster, toast } from "sonner";
+import { Tab, TabList, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const navLinks = (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/rooms">Rooms</NavLink>
-      </li>
-      <li>
-        <NavLink to="/mybookings">My Bookings</NavLink>
-      </li>
-      <li>
-        <NavLink to="/aboutUs">About Us</NavLink>
-      </li>
-      <li>
-        <NavLink to="/contacts">Contact Us</NavLink>
-      </li>
+      <Tabs forceRenderTabPanel={true}>
+        <TabList>
+          <Tab>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+          </Tab>
+          <Tab>
+            <li>
+              <NavLink to="/rooms">Rooms</NavLink>
+            </li>
+          </Tab>
+          <Tab>
+            <li>
+              <NavLink to="/mybookings">My Bookings</NavLink>
+            </li>
+          </Tab>
+          <Tab>
+            <li>
+              <NavLink to="/aboutUs">About Us</NavLink>
+            </li>
+          </Tab>
+          <Tab>
+            <li>
+              <NavLink to="/contacts">Contact Us</NavLink>
+            </li>
+          </Tab>
+        </TabList>
+      </Tabs>
     </>
   );
   const handleLogOut = () => {
