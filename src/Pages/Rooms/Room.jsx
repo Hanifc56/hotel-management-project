@@ -24,7 +24,7 @@ const Room = ({ room }) => {
               </p>
 
               <Link to={`/roomDetails/${_id}`}>
-                <button className="btn btn-outline btn-secondary">
+                <button className="btn btn-outline  btn-secondary">
                   Details
                 </button>
               </Link>

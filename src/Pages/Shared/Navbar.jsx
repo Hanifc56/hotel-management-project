@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import { AuthContext } from "../../Provider/AuthProvidr";
 import { Toaster, toast } from "sonner";
-import { Tab, TabList, Tabs } from "react-tabs";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
 const Navbar = () => {
@@ -14,31 +14,22 @@ const Navbar = () => {
       <Tabs forceRenderTabPanel={true}>
         <TabList>
           <Tab>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
+            <NavLink to="/">Home</NavLink>
           </Tab>
           <Tab>
-            <li>
-              <NavLink to="/rooms">Rooms</NavLink>
-            </li>
+            <NavLink to="/rooms">Rooms</NavLink>
           </Tab>
           <Tab>
-            <li>
-              <NavLink to="/mybookings">My Bookings</NavLink>
-            </li>
+            <NavLink to="/mybookings">My Bookings</NavLink>
           </Tab>
           <Tab>
-            <li>
-              <NavLink to="/aboutUs">About Us</NavLink>
-            </li>
+            <NavLink to="/aboutUs">About Us</NavLink>
           </Tab>
           <Tab>
-            <li>
-              <NavLink to="/contacts">Contact Us</NavLink>
-            </li>
+            <NavLink to="/contacts">Contact Us</NavLink>
           </Tab>
         </TabList>
+        <TabPanel></TabPanel>
       </Tabs>
     </>
   );

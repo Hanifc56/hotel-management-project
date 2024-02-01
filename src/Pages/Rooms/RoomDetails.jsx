@@ -1,12 +1,13 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
-import Swal from "sweetalert2";
 import { FaCheckCircle } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvidr";
+import Swal from "sweetalert2";
 
 const RoomDetails = () => {
+  const { user } = useContext(AuthContext);
   const room = useLoaderData();
-  const { id } = useParams();
-  console.log(id);
 
   const {
     _id,
@@ -22,39 +23,41 @@ const RoomDetails = () => {
     specialOffers,
   } = room;
 
-  const handleAddToCart = () => {
-    const addedCart = {
-      _id,
-      roomImg,
+  const handleBooking = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const date = form.date.value;
+    const email = user?.email;
+    const name = user?.displayName;
+    const bookedRoom = {
+      customerName: name,
+      email,
+      date,
+      room: _id,
+      price: price,
+      image: roomImg,
       roomType,
-      reviews,
-      description,
-      availability,
-      features,
-      price,
       roomSize,
-      details,
-      specialOffers,
     };
-    console.log(addedCart);
-    fetch(`http://localhost:5000/rooms/${id}`, {
+    console.log(bookedRoom);
+
+    fetch("http://localhost:5000/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(addedCart),
+      body: JSON.stringify(bookedRoom),
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.insertedId) {
           Swal.fire({
-            title: "Success!",
-            text: "Added Successfully",
+            title: "Completed",
+            text: "Booking succesful",
             icon: "success",
-            confirmButtonText: "COOL",
           });
         }
+        console.log(data);
       });
   };
 
@@ -92,13 +95,23 @@ const RoomDetails = () => {
                     {offer}
                   </dd>
                 ))}
-              </div>{" "}
+              </div>
+              <div className="border-t border-gray-200 pt-4">
+                <dt className="font-medium text-gray-900">
+                  <FaCheckCircle className="inline-block mr-2" />
+                  {availability}
+                </dt>
+                <dd className="mt-2 text-lg text-gray-500">Price: ${price}</dd>
+                <dd className="mt-2 text-lg text-gray-500">
+                  Room size: {roomSize}
+                </dd>
+              </div>
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-semibold text-2xl text-gray-900">
                   Reviews:
                 </dt>
                 {reviews.map((review) => (
-                  <dd className="mt-2 text-lg text-gray-500" key={review.id}>
+                  <dd className="mt-2 text-lg text-gray-500" key={review._id}>
                     <div className="card bg-gray-100 p-4">
                       <div className="">
                         <h2 className="card-title">{review.comment}</h2>
@@ -112,22 +125,13 @@ const RoomDetails = () => {
                     </div>
                   </dd>
                 ))}
-              </div>{" "}
-              <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">
-                  <FaCheckCircle className="inline-block mr-2" />
-                  {availability}
-                </dt>
-                <dd className="mt-2 text-lg text-gray-500">Price: ${price}</dd>
-                <dd className="mt-2 text-lg text-gray-500">
-                  Room size: {roomSize}
-                </dd>
               </div>
+
               <div className="border-t border-gray-200 pt-4">
-                <form>
+                <form onSubmit={handleBooking}>
                   <div className="form-control">
                     <label className="label">
-                      <span className="label-text">Email</span>
+                      <span className="label-text">Booking Date</span>
                     </label>
                     <input
                       type="date"
@@ -136,6 +140,11 @@ const RoomDetails = () => {
                       className="input input-bordered"
                       required
                     />
+                  </div>
+                  <div className="flex mb-8 justify-center w-full ">
+                    <button className="btn btn-outline btn-secondary  w-full my-4 items-center">
+                      Book Now!
+                    </button>
                   </div>
                 </form>
               </div>
@@ -148,16 +157,6 @@ const RoomDetails = () => {
               className="rounded-lg bg-gray-100"
             />
           </div>
-        </div>
-        <div
-          onClick={handleAddToCart}
-          className="flex mb-8 justify-center w-full "
-        >
-          <Link to="">
-            <button className="btn btn-outline btn-secondary  w-full my-4 items-center">
-              Book Now!
-            </button>
-          </Link>
         </div>
       </div>
     </div>
