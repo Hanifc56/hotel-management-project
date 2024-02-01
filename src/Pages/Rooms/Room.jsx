@@ -7,10 +7,12 @@ const Room = ({ room }) => {
       <div className="hero my-12 rounded-xl border">
         <div className="hero-content flex-col lg:flex-row ">
           <div className="lg:w-1/2">
-            <img
-              src={roomImg}
-              className="lg:max-w-md max-w-sm rounded-lg shadow-2xl"
-            />
+            <Link to={`/roomDetails/${_id}`}>
+              <img
+                src={roomImg}
+                className="lg:max-w-md max-w-sm rounded-lg shadow-2xl"
+              />
+            </Link>
           </div>
           <div className="flex justify-center items-center">
             <div>

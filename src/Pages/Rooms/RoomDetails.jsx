@@ -23,7 +23,19 @@ const RoomDetails = () => {
   } = room;
 
   const handleAddToCart = () => {
-    const addedCart = { name, brand, photo, type, price, rateing, discription };
+    const addedCart = {
+      _id,
+      roomImg,
+      roomType,
+      reviews,
+      description,
+      availability,
+      features,
+      price,
+      roomSize,
+      details,
+      specialOffers,
+    };
     console.log(addedCart);
     fetch(`http://localhost:5000/rooms/${id}`, {
       method: "POST",
@@ -82,11 +94,31 @@ const RoomDetails = () => {
                 ))}
               </div>{" "}
               <div className="border-t border-gray-200 pt-4">
+                <dt className="font-semibold text-2xl text-gray-900">
+                  Reviews:
+                </dt>
+                {reviews.map((review) => (
+                  <dd className="mt-2 text-lg text-gray-500" key={review.id}>
+                    <div className="card bg-gray-100 p-4">
+                      <div className="">
+                        <h2 className="card-title">{review.comment}</h2>
+                        <p>
+                          <small>{review.username}</small>
+                        </p>
+                        <p>
+                          <small>{review.timestamp}</small>
+                        </p>
+                      </div>
+                    </div>
+                  </dd>
+                ))}
+              </div>{" "}
+              <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <FaCheckCircle className="inline-block mr-2" />
                   {availability}
                 </dt>
-                <dd className="mt-2 text-lg text-gray-500">${price}</dd>
+                <dd className="mt-2 text-lg text-gray-500">Price: ${price}</dd>
                 <dd className="mt-2 text-lg text-gray-500">
                   Room size: {roomSize}
                 </dd>
@@ -101,9 +133,12 @@ const RoomDetails = () => {
             />
           </div>
         </div>
-        <div onClick={handleAddToCart} className="flex my-8 mx-auto w-full">
+        <div
+          onClick={handleAddToCart}
+          className="flex mb-8 justify-center w-full "
+        >
           <Link to="">
-            <button className="btn btn-outline btn-secondary  w-2/3 mx-auto">
+            <button className="btn btn-outline btn-secondary  w-full my-4 items-center">
               Book Now!
             </button>
           </Link>
