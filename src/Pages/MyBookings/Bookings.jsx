@@ -17,24 +17,12 @@ const Bookings = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1>My Bookigns: {bookings.length}</h1>
-      <div className="overflow-x-auto">
+      <h1 className="text-2xl font-bold text-blue-400 text-center">
+        Booked Rooms: {bookings.length}
+      </h1>
+      <div className="overflow-x-auto lg:mx-auto lg:my-12">
         <table className="table">
-          {/* head */}
-          <thead>
-            <tr>
-              <th>
-                <label>
-                  <input type="checkbox" className="checkbox" />
-                </label>
-              </th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
+          <tbody className="grid  justify-center">
             {bookings.map((booking) => (
               <Booking key={booking._id} booking={booking}></Booking>
             ))}
