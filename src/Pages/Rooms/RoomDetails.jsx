@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../Shared/Navbar";
 import Swal from "sweetalert2";
 import { FaCheckCircle } from "react-icons/fa";
@@ -19,6 +19,7 @@ const RoomDetails = () => {
     price,
     roomSize,
     details,
+    specialOffers,
   } = room;
 
   const handleAddToCart = () => {
@@ -70,8 +71,16 @@ const RoomDetails = () => {
                   </dd>
                 ))}
               </div>
-            </dl>
-            <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+              <div className="border-t border-gray-200 pt-4">
+                <dt className="font-semibold text-2xl text-gray-900">
+                  Spcial Offers:
+                </dt>
+                {specialOffers.map((offer, idx) => (
+                  <dd className="mt-2 text-lg text-gray-500" key={idx}>
+                    {offer}
+                  </dd>
+                ))}
+              </div>{" "}
               <div className="border-t border-gray-200 pt-4">
                 <dt className="font-medium text-gray-900">
                   <FaCheckCircle className="inline-block mr-2" />
@@ -93,9 +102,11 @@ const RoomDetails = () => {
           </div>
         </div>
         <div onClick={handleAddToCart} className="flex my-8 mx-auto w-full">
-          <button className="btn btn-outline btn-secondary  w-2/3 mx-auto">
-            Book Now!
-          </button>
+          <Link to="">
+            <button className="btn btn-outline btn-secondary  w-2/3 mx-auto">
+              Book Now!
+            </button>
+          </Link>
         </div>
       </div>
     </div>
