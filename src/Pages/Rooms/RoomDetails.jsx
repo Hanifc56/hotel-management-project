@@ -123,6 +123,22 @@ const RoomDetails = () => {
                   Room size: {roomSize}
                 </dd>
               </div>
+              <div className="border-t border-gray-200 pt-4">
+                <form>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Email</span>
+                    </label>
+                    <input
+                      type="date"
+                      placeholder="Pick a date to book"
+                      name="date"
+                      className="input input-bordered"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
             </dl>
           </div>
           <div className="grid grid-cols-1  gap-4 sm:gap-6 lg:gap-8">
