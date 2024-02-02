@@ -29,8 +29,8 @@ const Promotion = () => {
       <div
         data-aos="zoom-out-left"
         data-aos-offset="200"
-        data-aos-delay="100"
-        data-aos-duration="1000"
+        data-aos-delay="50"
+        data-aos-duration="800"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="false"
