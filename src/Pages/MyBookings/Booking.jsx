@@ -1,11 +1,24 @@
-const Booking = ({ booking }) => {
-  const { customerName, email, date, room, price, image, roomType, roomSize } =
-    booking;
+const Booking = ({ booking, handleDelteBooking }) => {
+  const {
+    _id,
+    customerName,
+    email,
+    date,
+    room,
+    price,
+    image,
+    roomType,
+    roomSize,
+  } = booking;
+
   return (
     <div>
       <tr>
         <th>
-          <button className="btn btn-circle btn-outline btn-sm">
+          <button
+            onClick={() => handleDelteBooking(_id)}
+            className="btn btn-circle btn-outline btn-sm"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
