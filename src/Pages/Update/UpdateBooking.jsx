@@ -43,6 +43,7 @@ const UpdateBooking = () => {
         console.log(data);
       });
   };
+
   return (
     <div>
       <Navbar></Navbar>

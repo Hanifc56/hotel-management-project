@@ -4,7 +4,6 @@ import { AuthContext } from "../../Provider/AuthProvidr";
 import Booking from "./Booking";
 import Swal from "sweetalert2";
 import moment from "moment";
-import { data } from "autoprefixer";
 
 const Bookings = () => {
   const { user } = useContext(AuthContext);
