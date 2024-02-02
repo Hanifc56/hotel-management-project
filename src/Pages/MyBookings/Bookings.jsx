@@ -3,6 +3,8 @@ import Navbar from "../Shared/Navbar";
 import { AuthContext } from "../../Provider/AuthProvidr";
 import Booking from "./Booking";
 import Swal from "sweetalert2";
+import moment from "moment";
+import { data } from "autoprefixer";
 
 const Bookings = () => {
   const { user } = useContext(AuthContext);
@@ -17,6 +19,20 @@ const Bookings = () => {
   }, [url]);
 
   const handleDelteBooking = (id) => {
+    const book = bookings.find((booking) => booking._id === id);
+    const date = book.date;
+    const dateString = date;
+    const targetDate = moment(dateString, "YYYY-MM-DD");
+    const currentDate = moment();
+    const dayDifference = currentDate.diff(targetDate, "days");
+    console.log(dayDifference);
+    if (dayDifference === 0) {
+      return Swal.fire({
+        title: "Alert!",
+        text: "You have to cancel before 1 day!",
+        icon: "warning",
+      });
+    }
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
