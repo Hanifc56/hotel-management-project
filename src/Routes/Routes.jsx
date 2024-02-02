@@ -10,6 +10,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AboutUs from "../Pages/AboutUs/About";
 import Contact from "../Pages/ContactUs/Contact";
+import UpdateBooking from "../Pages/Update/UpdateBooking";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,16 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/rooms/${params.id}`),
+      },
+      {
+        path: "/updateDetails/:id",
+        element: (
+          <PrivetRoutes>
+            <UpdateBooking></UpdateBooking>
+          </PrivetRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/bookings/${params.id}`),
       },
 
       {
