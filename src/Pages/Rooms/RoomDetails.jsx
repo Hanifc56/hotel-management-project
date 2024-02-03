@@ -41,7 +41,7 @@ const RoomDetails = () => {
     };
     console.log(bookedRoom);
 
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://hotel-management-server-uztu.onrender.com/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

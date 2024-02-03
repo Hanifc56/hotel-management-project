@@ -52,17 +52,25 @@ const AuthProvider = ({ children }) => {
       // if user Axist then issue a token
       if (currentUser) {
         axios
-          .post("http://localhost:5000/jwt", loggedUser, {
-            withCredentials: true,
-          })
+          .post(
+            "https://hotel-management-server-uztu.onrender.com/jwt",
+            loggedUser,
+            {
+              withCredentials: true,
+            }
+          )
           .then((res) => {
             console.log("Token responce", res.data);
           });
       } else {
         axios
-          .post("http://localhost:5000/logout", loggedUser, {
-            withCredentials: true,
-          })
+          .post(
+            "https://hotel-management-server-uztu.onrender.com/logout",
+            loggedUser,
+            {
+              withCredentials: true,
+            }
+          )
           .then((res) => {
             console.log("Logut", res.data);
           });

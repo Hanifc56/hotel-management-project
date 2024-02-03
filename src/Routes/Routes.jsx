@@ -51,7 +51,9 @@ const router = createBrowserRouter([
           </PrivetRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/rooms/${params.id}`),
+          fetch(
+            `https://hotel-management-server-uztu.onrender.com/rooms/${params.id}`
+          ),
       },
       {
         path: "/updateDetails/:id",
@@ -61,7 +63,9 @@ const router = createBrowserRouter([
           </PrivetRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/bookings/${params.id}`),
+          fetch(
+            `https://hotel-management-server-uztu.onrender.com/bookings/${params.id}`
+          ),
       },
 
       {

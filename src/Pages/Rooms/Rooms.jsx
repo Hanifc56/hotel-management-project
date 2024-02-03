@@ -20,7 +20,7 @@ const Rooms = () => {
     }
   };
   useEffect(() => {
-    fetch("http://localhost:5000/rooms")
+    fetch("https://hotel-management-server-uztu.onrender.com/rooms")
       .then((res) => res.json())
       .then((data) => {
         setRooms(data);

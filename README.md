@@ -1,8 +1,17 @@
-# React + Vite
+# Hotel-Management-Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- ? -->
 
-Currently, two official plugins are available:
+# 5 key Features of My Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+=> Parallax scroll effect on home page
+=> Aos animation
+=> Search rooms by price
+=> Multy Platform Authentication
+=> Date checek before Cancel booking
+
+<!-- ! -->
+
+# Live site : https://hotel-room-management-f7ea6.web.app/
+
+# Thank You For Visiting!

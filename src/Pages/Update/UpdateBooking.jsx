@@ -24,7 +24,7 @@ const UpdateBooking = () => {
 
     console.log(date);
 
-    fetch(`http://localhost:5000/bookings/${_id}`, {
+    fetch(`https://hotel-management-server-uztu.onrender.com/bookings/${_id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

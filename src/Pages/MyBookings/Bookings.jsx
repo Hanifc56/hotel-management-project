@@ -8,7 +8,7 @@ import moment from "moment";
 const Bookings = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
-  const url = `http://localhost:5000/bookings?email=${user.email}`;
+  const url = `https://hotel-management-server-uztu.onrender.com/bookings?email=${user.email}`;
   useEffect(() => {
     fetch(url, { credentials: "include" })
       .then((res) => res.json())
@@ -42,9 +42,12 @@ const Bookings = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/bookings/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://hotel-management-server-uztu.onrender.com/bookings/${id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
