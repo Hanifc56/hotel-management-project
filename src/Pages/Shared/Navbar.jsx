@@ -29,7 +29,11 @@ const Navbar = () => {
             <NavLink to="/contacts">Contact Us</NavLink>
           </Tab>
         </TabList>
-        <TabPanel></TabPanel>
+        <TabPanel>Home</TabPanel>
+        <TabPanel>Rooms</TabPanel>
+        <TabPanel>My Bookings</TabPanel>
+        <TabPanel>About Us</TabPanel>
+        <TabPanel>Contact Us</TabPanel>
       </Tabs>
     </>
   );
