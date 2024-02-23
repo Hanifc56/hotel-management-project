@@ -110,8 +110,8 @@ const RoomDetails = () => {
                 <dt className="font-semibold text-2xl text-gray-900">
                   Reviews:
                 </dt>
-                {reviews.map((review) => (
-                  <dd className="mt-2 text-lg text-gray-500" key={review._id}>
+                {reviews.map((review, idx) => (
+                  <dd className="mt-2 text-lg text-gray-500" key={idx}>
                     <div className="card bg-gray-100 p-4">
                       <div className="">
                         <h2 className="card-title">{review.comment}</h2>
