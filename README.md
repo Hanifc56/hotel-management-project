@@ -12,6 +12,6 @@
 
 <!-- ! -->
 
-# Live site : https://hotel-room-management-f7ea6.web.app/
+# Live site : https://hotel-room-booking-site.firebaseapp.com/
 
 # Thank You For Visiting!
